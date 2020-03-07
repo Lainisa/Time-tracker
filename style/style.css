@@ -1,0 +1,114 @@
+html {
+        background-attachment: fixed;
+        background-color: #fdfaf0;
+        background-image: url("../img/hourglass.png");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        overflow-y: scroll;
+}
+
+html::after{
+    background: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23aca292' fill-opacity='0.3' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+    background-attachment: fixed;
+    content: "";
+    height:100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: -1;
+}
+
+main {
+    background-color: rgb(241, 232, 207);
+    background-color: rgba(241, 232, 207, 0.6);
+    color: #222;
+    min-height: 30em;
+}
+
+body {
+    padding: 10px;
+}
+
+legend {
+    font-size: 24px;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.area {
+    box-sizing: border-box;
+    display: block;
+    height: 75px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 200px;
+}
+
+select {
+    display: block;
+    margin: 8px 0;
+    padding: 3px 4px;
+    width: 30%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+th {
+    color: #222;
+    height: 50px;
+}
+
+td {
+    color: #222;
+    text-align: center;
+}
+
+th:first-child, td:first-child {
+    display: none;
+}
+
+thead {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+body > main > .list > table > thead > tr > th {
+    background-color: rgb(164, 130, 78);
+    background-color: rgba(164, 130, 78, 0.3);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(164, 130, 78);
+    background-color: rgba(164, 130, 78, 0.3);
+}
+
+.noborder {
+    border: none;
+    padding: 0;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
